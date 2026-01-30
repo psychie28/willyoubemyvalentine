@@ -1,4 +1,4 @@
-'use client'
+a'use client'
 
 import Link from 'next/link';
 import {useState} from 'react';
@@ -30,7 +30,7 @@ export default function page() {
   return (
     <div className='box'>
       <img alt='gumball' className='gif' src={`/${img}.gif`} />
-      {how ? 'Hmmmph, Theres no choice!' : 'Will you go out with me?'}
+      {how ? 'Hmmmph, Theres no choice!' : 'Will you be my valentine? 🌷'}
       <div className='btns'>
         <Link className='yes' href='/yay'>
           <button onMouseOver={() => updteImg('sparkle-eyes')} onMouseOut={() => updteImg('puppy-eyes')}>
@@ -46,4 +46,5 @@ export default function page() {
     </div>
   )
   
+
 }
